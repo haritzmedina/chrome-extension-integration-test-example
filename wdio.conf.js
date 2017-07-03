@@ -1,3 +1,6 @@
+let chromeExtensionFolderPath = __dirname+'/dist/chrome';
+
+
 exports.config = {
 
   //
@@ -45,7 +48,7 @@ exports.config = {
     maxInstances: 5,
     //
     browserName: 'chrome',
-    chromeOptions: {args: ["--load-extension=./dist/chrome"]},
+    chromeOptions: {args: ["--load-extension="+chromeExtensionFolderPath, "--no-first-run", "--no-sandbox", "--no-default-browser-check"]},
     show: false
   }],
   //

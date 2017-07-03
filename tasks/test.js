@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const Server = require('karma').Server;
 const webdriver = require('gulp-webdriver');
 
 
